@@ -69,7 +69,13 @@ class PythonOrgSearch(unittest.TestCase):
         time.sleep(5)
 
         #Script de Isaac Tuiz
+        # Selecciono mi color favorito
+        driver.find_element(By.ID, "favcolor").send_keys("#008000")
 
+        # Selecciono una cantidad
+        driver.find_element(By.ID, "quantity").clear()
+        driver.find_element(By.ID, "quantity").send_keys("10")
+        time.sleep(10)
 
     def tearDown(self):
         self.driver.close()

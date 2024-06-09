@@ -13,5 +13,3 @@ password_field.send_keys('test')
 submit_button = driver.find_element(By.CSS_SELECTOR, 'input[type="submit"][value="Login"]')
 submit_button.click()
 time.sleep(10)
-
-
