@@ -30,9 +30,9 @@ class PythonOrgSearch(unittest.TestCase):
         #Script de Iris González
         driver = webdriver.Chrome()
         driver.get("https://trytestingthis.netlify.app/")
-        elem = driver.find_element(By.ID, "fname")
+        elem = driver.find_element(By.ID, "fnombre")
         elem.send_keys("Iris")
-        elem = driver.find_element(By.ID, "lname")
+        elem = driver.find_element(By.ID, "lapellido")
         elem.send_keys("Gonzalez")
 
         #Script de Raquel Reyes
